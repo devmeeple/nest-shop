@@ -38,4 +38,5 @@ lerna-debug.log*
 /postgres-data
 
 # Database
-.env
+.env.*
+!.env.example
