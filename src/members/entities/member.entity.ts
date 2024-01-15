@@ -19,4 +19,13 @@ export class Member {
 
   @OneToMany(() => Order, (order) => order.member)
   orders: Order[];
+
+  /**
+   * 초기화 코드 필요 시 필드 추가
+   */
+  static of(name: string): Member {
+    const member = new Member();
+    member.name = name;
+    return member;
+  }
 }
